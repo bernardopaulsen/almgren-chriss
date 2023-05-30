@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API &mdash; almgren-chriss 0.1.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="License" href="license.html" />
+    <link rel="prev" title="Welcome to almgren-chriss’s documentation!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            almgren-chriss
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#modules">Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#functions">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#almgren_chriss.cost_expectation"><code class="docutils literal notranslate"><span class="pre">cost_expectation()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#almgren_chriss.cost_variance"><code class="docutils literal notranslate"><span class="pre">cost_variance()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#almgren_chriss.value_at_risk"><code class="docutils literal notranslate"><span class="pre">value_at_risk()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#almgren_chriss.decay_rate"><code class="docutils literal notranslate"><span class="pre">decay_rate()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#almgren_chriss.trade_trajectory"><code class="docutils literal notranslate"><span class="pre">trade_trajectory()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#almgren_chriss.trade_list"><code class="docutils literal notranslate"><span class="pre">trade_list()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">almgren-chriss</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">API</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/modules/api.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-almgren_chriss.__init__">
+<span id="api"></span><h1>API<a class="headerlink" href="#module-almgren_chriss.__init__" title="Permalink to this heading">¶</a></h1>
+<p>This package provides functions for implementing the Almgren-Chriss model for optimal execution of portfolio
+transactions.</p>
+<section id="modules">
+<h2>Modules<a class="headerlink" href="#modules" title="Permalink to this heading">¶</a></h2>
+<dl class="simple">
+<dt>cost</dt><dd><p>Provides functions for calculating the expectation, variance and value-at-risk of the cost of trading.</p>
+</dd>
+<dt>decay_rate</dt><dd><p>Provides functions for calculating the trade decay rate.</p>
+</dd>
+<dt>trade</dt><dd><p>Provides functions for calculating the trading trajectory and the list of trades.</p>
+</dd>
+</dl>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this heading">¶</a></h2>
+<dl class="simple">
+<dt>cost_expectation</dt><dd><p>Calculate the expected cost of trading.</p>
+</dd>
+<dt>cost_variance</dt><dd><p>Calculate the variance of the cost of trading.</p>
+</dd>
+<dt>value_at_risk</dt><dd><p>Calculate the value-at-risk of the cost of trading.</p>
+</dd>
+<dt>decay_rate</dt><dd><p>Calculate the trade decay rate.</p>
+</dd>
+<dt>trade_trajectory</dt><dd><p>Calculate the trading trajectory.</p>
+</dd>
+<dt>trade_list</dt><dd><p>Calculate the list of trades.</p>
+</dd>
+</dl>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="almgren_chriss.cost_expectation">
+<span class="sig-prename descclassname"><span class="pre">almgren_chriss.</span></span><span class="sig-name descname"><span class="pre">cost_expectation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lambda_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epsilon</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#almgren_chriss.cost_expectation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the expected cost of trading in the Almgren-Chriss model.</p>
+<div class="math notranslate nohighlight">
+\[E(X) = \frac{1}{2}\gamma X^2+\epsilon X+\tilde{\eta}X^2\frac{\tanh(\frac{1}{2}\kappa\tau)\big(\tau\sinh(2\kappa T) + 2T\sinh(\kappa\tau) \big)}{2\tau^2\sinh^2(\kappa T)}\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lambda</strong> (<em>float</em>) – Risk tolerance</p></li>
+<li><p><strong>tau</strong> (<em>float</em>) – Interval between trades</p></li>
+<li><p><strong>sigma</strong> (<em>float</em>) – Volatility</p></li>
+<li><p><strong>gamma</strong> (<em>float</em>) – Permanent impact slope</p></li>
+<li><p><strong>eta</strong> (<em>float</em>) – Temporary impact slope</p></li>
+<li><p><strong>epsilon</strong> (<em>float</em>) – Temporary impact intercept</p></li>
+<li><p><strong>X</strong> (<em>float</em>) – Total number of shares</p></li>
+<li><p><strong>T</strong> (<em>float</em>) – Trading duration</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The expected cost of trading</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="almgren_chriss.cost_variance">
+<span class="sig-prename descclassname"><span class="pre">almgren_chriss.</span></span><span class="sig-name descname"><span class="pre">cost_variance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lambda_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#almgren_chriss.cost_variance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the variance of the cost of trading in the Almgren-Chriss model.</p>
+<div class="math notranslate nohighlight">
+\[V(X) = \frac{1}{2}\sigma^2X^2\frac{\tau\sinh(\kappa T) \cosh(\kappa(T-\tau))-T\sinh(\kappa\tau)}{\sinh^2(\kappa T)\sinh(\kappa\tau)}\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lambda</strong> (<em>float</em>) – Risk tolerance</p></li>
+<li><p><strong>tau</strong> (<em>float</em>) – Interval between trades</p></li>
+<li><p><strong>sigma</strong> (<em>float</em>) – Volatility</p></li>
+<li><p><strong>gamma</strong> (<em>float</em>) – Permanent impact slope</p></li>
+<li><p><strong>eta</strong> (<em>float</em>) – Temporary impact slope</p></li>
+<li><p><strong>X</strong> (<em>float</em>) – Total number of shares</p></li>
+<li><p><strong>T</strong> (<em>float</em>) – Trading duration</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The variance of the cost of trading</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="almgren_chriss.value_at_risk">
+<span class="sig-prename descclassname"><span class="pre">almgren_chriss.</span></span><span class="sig-name descname"><span class="pre">value_at_risk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lambda_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epsilon</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">probability</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.95</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#almgren_chriss.value_at_risk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the value-at-risk of the cost of trading in the Almgren-Chriss model.</p>
+<div class="math notranslate nohighlight">
+\[Var_p(x) = E(x) + \lambda_v \sqrt{V(x)}\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lambda</strong> (<em>float</em>) – Risk tolerance</p></li>
+<li><p><strong>tau</strong> (<em>float</em>) – Interval between trades</p></li>
+<li><p><strong>sigma</strong> (<em>float</em>) – Volatility</p></li>
+<li><p><strong>gamma</strong> (<em>float</em>) – Permanent impact slope</p></li>
+<li><p><strong>eta</strong> (<em>float</em>) – Temporary impact slope</p></li>
+<li><p><strong>epsilon</strong> (<em>float</em>) – Temporary impact intercept</p></li>
+<li><p><strong>X</strong> (<em>float</em>) – Total number of shares</p></li>
+<li><p><strong>T</strong> (<em>float</em>) – Trading duration</p></li>
+<li><p><strong>probability</strong> (<em>float</em>) – Probability that the cost won’t exceed the value-at-risk.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The value-at-risk of the cost of trading</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="almgren_chriss.decay_rate">
+<span class="sig-prename descclassname"><span class="pre">almgren_chriss.</span></span><span class="sig-name descname"><span class="pre">decay_rate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lambda_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#almgren_chriss.decay_rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the trade decay rate in the Almgren-Chriss model.</p>
+<div class="math notranslate nohighlight">
+\[\kappa = \frac{\cosh^{-1}\left( \frac{\tau^2}{2} \tilde{\kappa}^2 + 1 \right)}{\tau}\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lambda</strong> (<em>float</em>) – Risk tolerance</p></li>
+<li><p><strong>tau</strong> (<em>float</em>) – Interval between trades</p></li>
+<li><p><strong>sigma</strong> (<em>float</em>) – Volatility</p></li>
+<li><p><strong>gamma</strong> (<em>float</em>) – Permanent impact slope</p></li>
+<li><p><strong>eta</strong> (<em>float</em>) – Temporary impact slope</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The trade decay rate</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="almgren_chriss.trade_trajectory">
+<span class="sig-prename descclassname"><span class="pre">almgren_chriss.</span></span><span class="sig-name descname"><span class="pre">trade_trajectory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lambda_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#almgren_chriss.trade_trajectory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the trading trajectory in the Almgren-Chriss model.</p>
+<div class="math notranslate nohighlight">
+\[x_j = \frac{\sinh(\kappa(T-t_j))}{\sinh(\kappa T)}X\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lambda</strong> (<em>float</em>) – Risk tolerance</p></li>
+<li><p><strong>tau</strong> (<em>float</em>) – Interval between trades</p></li>
+<li><p><strong>sigma</strong> (<em>float</em>) – Volatility</p></li>
+<li><p><strong>gamma</strong> (<em>float</em>) – Permanent impact slope</p></li>
+<li><p><strong>eta</strong> (<em>float</em>) – Temporary impact slope</p></li>
+<li><p><strong>X</strong> (<em>float</em>) – Total number of shares</p></li>
+<li><p><strong>T</strong> (<em>float</em>) – Trading duration</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The trading trajectory</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="almgren_chriss.trade_list">
+<span class="sig-prename descclassname"><span class="pre">almgren_chriss.</span></span><span class="sig-name descname"><span class="pre">trade_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lambda_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#almgren_chriss.trade_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the list of trades in the Almgren-Chriss model.</p>
+<div class="math notranslate nohighlight">
+\[n_j = \frac{2\sinh(\frac{1}{2}\kappa\tau)}{\sinh(\kappa T)} \cosh\left(\kappa\left(T-t_{j-\frac{1}{2}} \right) \right)X\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lambda</strong> (<em>float</em>) – Risk tolerance</p></li>
+<li><p><strong>tau</strong> (<em>float</em>) – Interval between trades</p></li>
+<li><p><strong>sigma</strong> (<em>float</em>) – Volatility</p></li>
+<li><p><strong>gamma</strong> (<em>float</em>) – Permanent impact slope</p></li>
+<li><p><strong>eta</strong> (<em>float</em>) – Temporary impact slope</p></li>
+<li><p><strong>X</strong> (<em>float</em>) – Total number of shares</p></li>
+<li><p><strong>T</strong> (<em>float</em>) – Trading duration</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The list of trades</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to almgren-chriss’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="license.html" class="btn btn-neutral float-right" title="License" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Bernardo Paulsen.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

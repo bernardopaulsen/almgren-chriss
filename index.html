@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to almgren-chriss’s documentation! &mdash; almgren-chriss 0.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API" href="modules/api.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            almgren-chriss
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">almgren-chriss</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Welcome to almgren-chriss’s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-almgren-chriss-s-documentation">
+<h1>Welcome to almgren-chriss’s documentation!<a class="headerlink" href="#welcome-to-almgren-chriss-s-documentation" title="Permalink to this heading">¶</a></h1>
+<p>Welcome to the documentation for the Almgren-Chriss model implementation. This package provides a set of functions for
+implementing the Almgren-Chriss model for optimal execution of portfolio transactions.</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
+<p>You can install the almgren_chriss package with <strong>pip</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">almgren_chriss</span>
+</pre></div>
+</div>
+</section>
+<section id="what-is-the-almgren-chriss-model">
+<h2>What is the Almgren-Chriss Model?<a class="headerlink" href="#what-is-the-almgren-chriss-model" title="Permalink to this heading">¶</a></h2>
+<p>The Almgren-Chriss model is a mathematical model used in financial markets to determine the optimal way to execute large
+orders. The model takes into account various factors such as the risk tolerance of the trader, the volatility of the
+market, and the impact of the trade on the market price. The goal of the model is to minimize the expected cost of the
+trade while taking into account the risk of price fluctuations.</p>
+</section>
+<section id="functions-in-the-package">
+<h2>Functions in the Package<a class="headerlink" href="#functions-in-the-package" title="Permalink to this heading">¶</a></h2>
+<p>The package provides the following functions:</p>
+<ul class="simple">
+<li><p><cite>cost_expectation</cite>: Calculate the expected cost of trading.</p></li>
+<li><p><cite>cost_variance</cite>: Calculate the variance of the cost of trading.</p></li>
+<li><p><cite>value_at_risk</cite>: Calculate the value-at-risk of the cost of trading.</p></li>
+<li><p><cite>decay_rate</cite>: Calculate the trade decay rate.</p></li>
+<li><p><cite>trade_trajectory</cite>: Calculate the trading trajectory.</p></li>
+<li><p><cite>trade_list</cite>: Calculate the list of trades.</p></li>
+</ul>
+<p>Each function takes various parameters including risk tolerance, interval between trades, volatility, permanent impact
+slope, temporary impact slope, total number of shares, and trading duration.</p>
+</section>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h2>
+<p>Here is an example of how to use the functions in the package:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">almgren_chriss</span> <span class="kn">import</span> <span class="n">trade_trajectory</span><span class="p">,</span> <span class="n">trade_list</span><span class="p">,</span> <span class="n">cost_expectation</span><span class="p">,</span> <span class="n">cost_variance</span>
+
+
+<span class="n">lambda_</span> <span class="o">=</span> <span class="mf">2e-6</span>
+<span class="n">tau</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mf">0.95</span>
+<span class="n">gamma</span> <span class="o">=</span> <span class="mf">2.5e-7</span>
+<span class="n">eta</span> <span class="o">=</span> <span class="mf">2.5e-6</span>
+<span class="n">epsilon</span> <span class="o">=</span> <span class="mf">0.0625</span>
+<span class="n">X</span> <span class="o">=</span> <span class="mf">1e06</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">trade_trajectory</span><span class="p">(</span><span class="n">lambda_</span><span class="p">,</span> <span class="n">tau</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="n">eta</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">T</span><span class="p">)</span>
+<span class="go">array([1000000.0, 428598.84574702, 182932.81426177, 76295.72161546, 27643.37739691, 0.0])</span>
+</pre></div>
+</div>
+<img alt="_images/trade_trajectory.png" src="_images/trade_trajectory.png" />
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">trade_list</span><span class="p">(</span><span class="n">lambda_</span><span class="p">,</span> <span class="n">tau</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="n">eta</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">T</span><span class="p">)</span>
+<span class="go">array([571401.15425298, 245666.03148525, 106637.09264631, 48652.34421856, 27643.37739691])</span>
+</pre></div>
+</div>
+<img alt="_images/trade_list.png" src="_images/trade_list.png" />
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cost_expectation</span><span class="p">(</span><span class="n">lambda_</span><span class="p">,</span> <span class="n">tau</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="n">eta</span><span class="p">,</span> <span class="n">epsilon</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">T</span><span class="p">)</span>
+<span class="go">1140715.1670497851</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">math</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">cost_variance</span><span class="p">(</span><span class="n">lambda_</span><span class="p">,</span> <span class="n">tau</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="n">eta</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">T</span><span class="p">))</span>
+<span class="go">449367.65254135116</span>
+</pre></div>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules/api.html">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/api.html#modules">Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/api.html#functions">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/api.html#almgren_chriss.cost_expectation"><code class="docutils literal notranslate"><span class="pre">cost_expectation()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/api.html#almgren_chriss.cost_variance"><code class="docutils literal notranslate"><span class="pre">cost_variance()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/api.html#almgren_chriss.value_at_risk"><code class="docutils literal notranslate"><span class="pre">value_at_risk()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/api.html#almgren_chriss.decay_rate"><code class="docutils literal notranslate"><span class="pre">decay_rate()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/api.html#almgren_chriss.trade_trajectory"><code class="docutils literal notranslate"><span class="pre">trade_trajectory()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/api.html#almgren_chriss.trade_list"><code class="docutils literal notranslate"><span class="pre">trade_list()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/license.html">License</a></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules/api.html" class="btn btn-neutral float-right" title="API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Bernardo Paulsen.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
